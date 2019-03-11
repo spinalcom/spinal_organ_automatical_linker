@@ -3,6 +3,7 @@ let geographicService = require("spinal-env-viewer-context-geographic-service")
   .default.constants;
 
 let bmsNetwork = require("spinal-model-bmsnetwork");
+
 module.exports = {
   getBimObjectMap(graph) {
     return graph.getContext(config.geographic).then(context => {
